@@ -1,10 +1,14 @@
 {
   "name": "shopware-pwa-project",
   "version": "1.0.0",
+  "engines": {
+    "node": "14.5.3",
+    "yarn": "1.22.10"
+  },
   "private": true,
   "scripts": {
     "dev": "shopware-pwa dev",
-    "build": "shopware-pwa build",
+    "build": "npx @shopware-pwa/cli@canary init --ci && nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
     "test": "jest",
